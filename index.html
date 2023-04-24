@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de gorjeta</title> 
+</head>
+<body>
+    <div class="titulo">
+        <h1>Calculadora de gorjetas</h1>
+    </div>
+    <div class="fomulario1">
+        <form>
+            <label for="conta">
+                <p>Quanto ficou a conta?</p>
+            </label>
+            <p>
+                R$ <input type="number" placeholder="100" name="conta" id="conta"> <!-- "placeholder deixa sujestivo um valor na tag/label" -->
+            </p>
+            <label for="qualidade">
+                <p>Como foi o seu serviço? </p>
+            </label>
+            <p>
+                <select name="qualidade">
+                    <option value="" disabled selected>Escolha uma opção</option><!--"disabled" desabilita a opção "selected" mantem selecionado ao carregar a pagina-->
+                    <option value="0.05">05% - Insatisfeito</option>
+                    <option value="0.10">10% - Satisfeito</option>
+                    <option value="0.15">15% - Bom</option>
+                    <option value="0.20">20% - Muito bom </option>
+                    <option value="0.25">25% - Excelente</option>                  
+                </select>
+            </p>
+            <label for="pessoas">
+                <p>Quantas pessoas vão dividir a conta?</p>
+            </label>
+            <p>
+                <input type="number" placeholder="1" name="pessoas" id="pessoas"> Pessoa(s)
+            </p>
+            <button type="submit">Calcular</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
