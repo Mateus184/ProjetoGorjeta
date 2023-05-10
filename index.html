@@ -12,7 +12,7 @@
         <div class="titulo">
             <h1 class="title">Calculadora de gorjetas</h1>
         </div>
-        <div class="fomulario1">
+        <div class="fomulario1" id="tipsForm">
             <form class="form1">
                 <label for="conta">
                     <p>Quanto ficou a conta?</p>
@@ -24,7 +24,7 @@
                     <p>Como foi o seu serviço? </p>
                 </label>
                 <p>
-                    <select name="qualidade" class="formSelect">
+                    <select name="qualidade" class="formSelect" id="Service">
                         <option value="" disabled selected>Escolha uma opção</option><!--"disabled" desabilita a opção "selected" mantem selecionado ao carregar a pagina-->
                         <option value="0.05">05% - Insatisfeito</option>
                         <option value="0.10">10% - Satisfeito</option>
@@ -43,6 +43,12 @@
             </form>
 
         </div>
-    </div>    
+        <div id="totalTips">
+            Gorjeta total:
+            R$ <span id="tips">o.oo</span>
+            <p id="each">cada</p>
+        </div>
+    </div>  
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
