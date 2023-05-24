@@ -13,18 +13,18 @@
             <h1 class="title">Calculadora de gorjetas</h1>
         </div>
         <div class="fomulario1" id="tipsForm">
-            <form class="form1">
+            <form class="form1" id="form1">
                 <label for="conta">
                     <p>Quanto ficou a conta?</p>
                 </label>
                 <p>
-                    R$ <input type="number" placeholder="100" name="conta" id="conta" class="formImput"> <!-- "placeholder deixa sujestivo um valor na tag/label" -->
+                    R$ <input type="number" placeholder="100" name="conta" id="conta" class="formImput" required> <!-- "placeholder deixa sujestivo um valor na tag/label" -->
                 </p>
                 <label for="qualidade">
                     <p>Como foi o seu serviço? </p>
                 </label>
                 <p>
-                    <select name="qualidade" class="formSelect" id="Service">
+                    <select name="qualidade" class="formSelect" id="service" required>
                         <option value="" disabled selected>Escolha uma opção</option><!--"disabled" desabilita a opção "selected" mantem selecionado ao carregar a pagina-->
                         <option value="0.05">05% - Insatisfeito</option>
                         <option value="0.10">10% - Satisfeito</option>
@@ -37,7 +37,7 @@
                     <p>Quantas pessoas vão dividir a conta?</p>
                 </label>
                 <p>
-                    <input type="number" placeholder="1" name="pessoas" id="pessoas" class="formImput"> Pessoa(s)
+                    <input type="number" placeholder="1" name="pessoas" id="pessoas" class="formImput" required> Pessoa(s)
                 </p>
                 <button type="submit" class="formSubmit">Calcular</button>
             </form>
